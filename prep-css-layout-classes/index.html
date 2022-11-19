@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 992px;
+      margin: auto;
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+    }
+
+    .column {
+      flex-basis: calc(100%/3);
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    .column > img {
+      width: 100%;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Complete the HTML here -->
+  <div class="container">
+    <div class="row">
+      <div class="column"><img src="http://cdn.shopify.com/s/files/1/1057/4964/products/Toy-Story-Vintage-Movie-Poster-Original-1-Sheet-27x41_2e3c6697-790d-4fcc-82bb-75b72a88835c_grande.jpg?v=1663222680" alt="Toy Story 1">
+        <h3>Toy Story 1</h3>
+        <p>This follows the story of a toy cowboy who is the favorite to his owner, Andy. However, he one day finds his position in jeopardy when a new toy enters the scene, Buzz Lightyear. When Andy and his family move houses, Woody and Buzz find themselves stuck with a terrible neighbor and must find a way to reunite back with their owner. </p>
+      </div>
+      <div class="column"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c0/Toy_Story_2.jpg/220px-Toy_Story_2.jpg" alt="Toy Story 2">
+        <h3>Toy Story 2</h3>
+        <p>
+          Woody is stolen from his home by a toy dealer with the rest of his friends trying to rescue him. But he later discovers that he is a valuable toy from a once popular tv show and decides he doesn't want to leave. Now his friends must convince him to return and reunite him back with his original owner.
+        </p>
+      </div>
+      <div class="column"><img src="https://s3.amazonaws.com/static.rogerebert.com/uploads/movie/movie_poster/toy-story-3-2010/large_ocdzo5jXxYngxhQM38vzNr3Ezco.jpg" alt="Toy Story 3">
+        <h3>Toy Story 3</h3>
+        <p>
+          With Andy leaving to college, Woody and Buzz and the rest of the toys find themselves headed for the attic but mistaken as trash. Woody saves the gang with his quick thinking but all but Woody end up being donated to a day-care center. Unfortunately, the kids don't play well with them and now they have to find a way to escape.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
